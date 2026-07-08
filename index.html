@@ -83,6 +83,41 @@
             padding-left: 20px;
         }
 
+        .feedback {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .feedback form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .feedback input,
+        .feedback textarea,
+        .feedback button {
+            padding: 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .feedback button {
+            background: #4F46E5;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .feedback button:hover {
+            background: #3730a3;
+        }
+
         footer {
             background: #1F2937;
             color: white;
@@ -198,7 +233,7 @@ When sending a message on WhatsApp, the app provides real-time feedback by displ
         <h3>✅ Accessible Example</h3>
 
         <form>
-            <label for="username">Username</label><br>
+            <label for="username">Username:</label><br>
             <input
                 type="text"
                 id="username"
@@ -208,7 +243,7 @@ When sending a message on WhatsApp, the app provides real-time feedback by displ
 
             <br><br>
 
-            <label for="password">Password</label><br>
+            <label for="password">Password:</label><br>
             <input
                 type="password"
                 id="password"
@@ -289,10 +324,27 @@ By incorporating these additional principles in UI design, designers can create 
     </p>
 </section>
 
+<section class="feedback">
+    <h2>Share Your Feedback</h2>
+    <p>We would love to hear your thoughts about this article or any UI design tips you want to share.</p>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your email">
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Write your feedback here..."></textarea>
+
+        <button type="submit">Send Feedback</button>
+    </form>
+</section>
+
 </main>
 
 <footer>
-    <p>&copy; 2026 RichanJoseBlog | Designed by Richan Jose INMCA 24-29</p>
+    <p>Designed by Richan Jose INMCA 24-29</p>
 </footer>
 
 </body>
